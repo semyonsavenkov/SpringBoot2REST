@@ -1,4 +1,4 @@
-package com.example.sb2rest;
+package com.example.sb2rest.model;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;

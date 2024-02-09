@@ -1,4 +1,4 @@
-package com.example.sb2rest;
+package com.example.sb2rest.exceptions;
 
 public class UnauthorizedUser extends RuntimeException {
 

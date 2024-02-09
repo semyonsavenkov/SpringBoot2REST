@@ -1,5 +1,6 @@
-package com.example.sb2rest;
+package com.example.sb2rest.model;
 
+import com.example.sb2rest.model.User;
 import org.springframework.core.MethodParameter;
 import org.springframework.web.bind.support.WebDataBinderFactory;
 import org.springframework.web.context.request.NativeWebRequest;

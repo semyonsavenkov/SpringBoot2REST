@@ -1,5 +1,8 @@
-package com.example.sb2rest;
+package com.example.sb2rest.config;
 
+import com.example.sb2rest.model.UserArgumentResolver;
+import com.example.sb2rest.repository.UserRepository;
+import com.example.sb2rest.model.service.AuthorizationService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.method.support.HandlerMethodArgumentResolver;

@@ -1,15 +1,22 @@
-package com.example.sb2rest;
+package com.example.sb2rest.model.service;
 
+import com.example.sb2rest.exceptions.InvalidCredentials;
+import com.example.sb2rest.exceptions.UnauthorizedUser;
+import com.example.sb2rest.model.Authorities;
+import com.example.sb2rest.model.User;
+import com.example.sb2rest.model.UserArgumentResolver;
+import com.example.sb2rest.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 
 public class AuthorizationService {
 
-    @Autowired
-    UserRepository userRepository;
+    private final UserRepository userRepository;
 
-    UserArgumentResolver resolver;
+    public AuthorizationService() {
+        userRepository = new UserRepository();
+    }
 
     public List<Authorities> getAuthorities(String name, String password) {
         if (isEmpty(name) || isEmpty(password)) {

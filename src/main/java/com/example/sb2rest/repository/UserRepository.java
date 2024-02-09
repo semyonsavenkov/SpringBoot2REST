@@ -1,5 +1,6 @@
-package com.example.sb2rest;
+package com.example.sb2rest.repository;
 
+import com.example.sb2rest.model.Authorities;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
